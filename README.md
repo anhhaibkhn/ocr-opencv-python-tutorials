@@ -5,8 +5,12 @@ I tried out the following tutorials from several blogs.
 
 - ocr-with-tesseract is the tutorial from [nanonets blog](https://nanonets.com/blog/.) 
 - ocr_docker is an example of building a simple OCR web app with docker. [Source](https://github.com/ricktorzynski/ocr-tesseract-docker/blob/master/README.md)
-- basic-tesseract-ocr is the tutorial from [pyimagesearch](https://www.pyimagesearch.com/2021/08/23/your-first-ocr-project-with-tesseract-and-python/)
--
+
+the tutorials from [pyimagesearch](https://www.pyimagesearch.com/)
+- [ocr-for-non-english](https://www.pyimagesearch.com/2020/08/03/tesseract-ocr-for-non-english-languages/)
+- [basic-tesseract-ocr](https://www.pyimagesearch.com/2021/08/23/your-first-ocr-project-with-tesseract-and-python/)
+
+
 Updating ...
 
 
