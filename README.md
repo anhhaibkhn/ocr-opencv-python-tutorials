@@ -4,7 +4,9 @@ Summarizing my self-learned tutorials in the topic of building OCR applications.
 I tried out the followiing tutorials from several blogs. 
 
 - ocr-with-tesseract is the tutorial from https://nanonets.com/blog/. 
-- Updating ...
+- ocr_docker is an example of building simple OCR web app with docker. 
+-
+Updating ...
 
 
 Current installed packages:
