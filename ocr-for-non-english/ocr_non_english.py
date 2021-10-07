@@ -1,8 +1,16 @@
+# USAGE:
+# python ocr_non_english.py --image trans_images/tesseract_nonenglish_german.png --lang deu --tessdata-dir C:/Users/nguyenngochai/trial_projects/tessdata
+# IN SHORT
+# python ocr_non_english.py --image trans_images/tesseract_nonenglish_german.png --lang deu
+# SPECIFY PSM Mode
+# python ocr_non_english.py --image trans_images/tesseract_nonenglish_german_block-659x1024.png -l deu -p 3
+
 # import the necessary packages
 from textblob import TextBlob
 import pytesseract
 import argparse
 import cv2
+from bs4 import BeautifulSoup
 
 """
 --image: The path to the input image to be OCR’d.
@@ -25,17 +33,18 @@ ap.add_argument("-p", "--psm", type=int, default=13,
 	help="Tesseract PSM mode")
 # Adding argument to direct to tesseract data 
 data_path = "C:/Users/nguyenngochai/trial_projects/tessdata"
-ap.add_argument("--tessdata-dir", "--data", type=str, default=data_path,
+ap.add_argument("--tessdata-dir", type=str, default=data_path,
 	help="Tesseract language database location")
 
 args = vars(ap.parse_args())
+print(args)
 
 # load the input image and convert it from BGR to RGB channel
 # ordering
 image = cv2.imread(args["image"])
 rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 # OCR the image, supplying the country code as the language parameter
-options = "-l {} --psm {} --tessdata-dir".format(args["lang"], args["psm"], args["data"])
+options = "-l {} --psm {} --tessdata-dir {}".format(args["lang"], args["psm"], args["tessdata_dir"])
 text = pytesseract.image_to_string(rgb, config=options)
 # show the original OCR'd text
 print("ORIGINAL")
@@ -50,4 +59,6 @@ translated = tb.translate(to=args["to"])
 # show the translated text
 print("TRANSLATED")
 print("==========")
-print(translated)
+print(type(translated))
+soup = BeautifulSoup(str(translated), features="html.parser")
+print(soup.text)
