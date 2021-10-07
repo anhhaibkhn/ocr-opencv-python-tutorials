@@ -7,6 +7,12 @@ import pytesseract
 import argparse
 import cv2
 
+
+"""
+--image: Path to the image to be OCR’d
+--digits: A flag indicating whether or not we should OCR digits only (by default, the option is set to a True Boolean)
+
+"""
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
