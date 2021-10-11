@@ -4,7 +4,7 @@ Example 2: python easy_ocr.py --image images/arabic_sign.jpg --langs en,ar
 Example 3: python easy_ocr.py --image images/swedish_sign.jpg --langs en,sv
 Example 4: python easy_ocr.py --image images/turkish_sign.jpg --langs en,tr
 
-Source: [Pyimagsearch](https://www.pyimagesearch.com/) 
+Source: [Pyimagsearch](https://www.pyimagesearch.com/2020/08/03/tesseract-ocr-for-non-english-languages/)) 
 
 ### 1. Using EasyOCR package to easily perform Optical Character Recognition and text detection with Python
 - ocr-for-non-english\easy_ocr.py

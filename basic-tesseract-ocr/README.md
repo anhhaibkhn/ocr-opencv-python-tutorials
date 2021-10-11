@@ -1,3 +1,5 @@
+Source [Pyimagesearch](https://www.pyimagesearch.com/2021/08/23/your-first-ocr-project-with-tesseract-and-python/).
+
 Learning Objectives: 
 
 - Gain hands-on experience using Tesseract to OCR an image
