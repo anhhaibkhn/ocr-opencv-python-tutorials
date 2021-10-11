@@ -10,6 +10,7 @@ the tutorials from [pyimagesearch](https://www.pyimagesearch.com/)
 - [ocr-for-non-english](https://www.pyimagesearch.com/2020/08/03/tesseract-ocr-for-non-english-languages/)
 - [basic-tesseract-ocr](https://www.pyimagesearch.com/2021/08/23/your-first-ocr-project-with-tesseract-and-python/)
 - [detecting-and-ocring-digits](https://www.pyimagesearch.com/2021/08/30/detecting-and-ocring-digits-with-tesseract-and-python/)
+- [opencv-sudoku-solver-and-ocr](https://www.pyimagesearch.com/2020/08/10/opencv-sudoku-solver-and-ocr/)
 
 
 

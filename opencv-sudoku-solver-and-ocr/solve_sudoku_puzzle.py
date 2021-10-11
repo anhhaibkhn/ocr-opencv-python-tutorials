@@ -3,7 +3,14 @@ Once SudokuNet is successfully trained, we’ll deploy it with our solve_sudoku_
 
 USAGE:
 
-python solve_sudoku_puzzle.py --model output\digit_classifier.h5 --image sudoku_pic.jpg
+python solve_sudoku_puzzle.py --image sudoku_pic.jpg --model output\pyimagesearch_sequential.h5
+python solve_sudoku_puzzle.py -i sudoku_pic.jpg -m output\pyimagesearch_sequential.h5
+
+DEBUG 
+
+python solve_sudoku_puzzle.py --image sudoku_pic.jpg --model output\pyimagesearch_sequential.h5 --debug 1
+python solve_sudoku_puzzle.py -i sudoku_pic.jpg -m output\pyimagesearch_sequential.h5 -d 1
+
 """
 
 # import the necessary packages
@@ -77,7 +84,8 @@ for y in range(0, 9):
             # classify the digit and update the Sudoku board with the
             # prediction
             pred = model.predict(roi).argmax(axis=1)[0]
-            print(pred)
+            if args["debug"] > 0:
+                print(pred)
             board[y, x] = pred
     # add the row to our cell locations
     cellLocs.append(row)

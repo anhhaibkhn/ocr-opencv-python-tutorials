@@ -2,6 +2,7 @@
 As with all CNNs, SudokuNet needs to be trained with data. 
 This train_digit_classifier.py script will train a digit OCR model on the MNIST dataset.
 """
+# Usage: python train_digit_classifier.py --model output/pyimagesearch_sequential.h5
 import sys 
 sys.path.append('pyimagesearch\models\Sudokunet.py')
 from pyimagesearch.models import Sudokunet as sdk
@@ -12,6 +13,7 @@ from tensorflow.keras.datasets import mnist
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
 import argparse
+from pathlib import Path
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -23,7 +25,8 @@ args = vars(ap.parse_args())
 # initialize the initial learning rate, number of epochs to train
 # for, and batch size
 INIT_LR = 1e-3
-EPOCHS = 10
+### 10 EPOCHS was not enough to get a good accuracy for 8 and 9 pics
+EPOCHS = 30
 BS = 128
 # grab the MNIST dataset
 print("[INFO] accessing MNIST...")
@@ -65,4 +68,7 @@ print(classification_report(
 	target_names=[str(x) for x in le.classes_]))
 # serialize the model to disk
 print("[INFO] serializing digit model...")
+
+# save model and its name 
+model._name = Path(args["model"]).name
 model.save(args["model"], save_format="h5")
