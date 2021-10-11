@@ -40,12 +40,12 @@ urllib.error.HTTPError: HTTP Error 404: Not Found
 ''''
 
 To fix it, we need to modify the TextBlob's translate.py file:
-
+```` 
 url = "http://translate.google.com/translate_a/t?client=webapp&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&dt=at&ie=UTF-8&oe=UTF-8&otf=2&ssel=0&tsel=0&kc=1"
-
+```` 
 then change above code in translate.py to following:
-
-url = "http://translate.google.com/translate_a/t?client=te&format=html&dt=bd&dt=ex&dt=
-
+```` 
+url = "http://translate.google.com/translate_a/t?client=te&format=html&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&dt=at&ie=UTF-8&oe=UTF-8&otf=2&ssel=0&tsel=0&kc=1"
+```` 
 Note 2:
 - This file needs to use Tesseract data for dealing with multiple languages. I added a new parser argument --tessdata-dir to avoid changing the TESSDATA_PREFIX environment variable. From this point, you can navigate the tesseract data where you cloned from the original GitHub data. 
