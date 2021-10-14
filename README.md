@@ -12,6 +12,9 @@ The other tutorials are from [pyimagesearch](https://www.pyimagesearch.com/):
 - [basic-tesseract-ocr](https://github.com/anhhaibkhn/ocr-opencv-python-tutorials/tree/main/basic-tesseract-ocr)
 - [detecting-and-ocring-digits](https://github.com/anhhaibkhn/ocr-opencv-python-tutorials/tree/main/detecting-and-ocring-digits)
 - [opencv-sudoku-solver-and-ocr](https://github.com/anhhaibkhn/ocr-opencv-python-tutorials/tree/main/opencv-sudoku-solver-and-ocr)
+- [four-points get-perspective transform example](https://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/)
+- [building a document scanner opencv](https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/)
+- [image alignment and registration opencv](https://www.pyimagesearch.com/2020/08/31/image-alignment-and-registration-with-opencv/)
 
 
 
