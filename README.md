@@ -1,5 +1,5 @@
 # ocr-opencv-python-tutorials
-Summarizing my self-learned tutorials in the topic of building OCR applications.
+Summarizing my self-learned tutorials in the topic of building OCR python applications.
 
 This repo includes the following tutorials:
 
@@ -15,6 +15,7 @@ The other tutorials are from [pyimagesearch](https://www.pyimagesearch.com/):
 - [four-points get-perspective transform example](https://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/)
 - [building a document scanner opencv](https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/)
 - [image alignment and registration opencv](https://www.pyimagesearch.com/2020/08/31/image-alignment-and-registration-with-opencv/)
+- [using-ml-to-denoise-images-for-better-ocr-accuracy](https://www.pyimagesearch.com/2021/10/20/using-machine-learning-to-denoise-images-for-better-ocr-accuracy/)
 
 
 
